@@ -7,6 +7,18 @@
     outline: none !important;
 }
 
+
+/* .background {
+    border-radius: 10px;
+    width: 500px !important;
+    height: 500px !important;
+    background: #F2F2F2 !important;
+    margin: 0 auto !important;
+    -webkit-box-shadow: inset 3px -1px 43px -9px rgba(0,0,0,0.48) !important;
+    -moz-box-shadow: inset 3px -1px 43px -9px rgba(0,0,0,0.48) !important;
+    box-shadow: inset 3px -1px 43px -9px rgba(0,0,0,0.48) !important;
+} */
+
 .slick-wrapper {
     width: auto;
     margin: 0 auto;
