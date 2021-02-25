@@ -198,13 +198,18 @@ nav ul li + li {
     }
 
     nav ul li {
-        min-width: 137px;
+        min-width: 94px !important;
         height: 24.12px;
         font-size: 12px;
+        width: 75px !important;
     }
 
     nav ul li + li {
         margin-left: 10px;
         
+    }
+
+    nav.navigation {
+        margin-bottom: 10px !important;
     }
 }
