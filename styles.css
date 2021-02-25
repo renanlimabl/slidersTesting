@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none !important;
 }
 
 .slick-wrapper {
@@ -112,7 +113,7 @@ nav ul li {
     padding: 0 2px;
 }
 
-nav ul li.active {
+nav ul li.active-custom-slider {
     background: #FF5B00;
     color: #fff;
     border-radius: 100px;
@@ -138,6 +139,41 @@ nav ul li + li {
 }
 
 @media screen and (max-width: 768px) {
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+
+    .slide-item {
+        height: 145px;
+        margin-bottom: 5px;
+    }
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+
+    .slick-list {
+        margin: 0 25px;
+        margin-left: 2px;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        min-width: 137px;
+        height: 24.12px;
+        font-size: 12px;
+    }
+
+    nav ul li + li {
+        margin-left: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
     .arrow-left, .arrow-right {
         display: none;
     }
