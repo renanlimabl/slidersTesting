@@ -12,7 +12,6 @@
 //     prevArrow: $('.arrow-left-0')
 // });
 const allSliders = document.querySelectorAll('.slick-wrapper')
-console.log(allSliders)
 
 allSliders.forEach((item, index) => {
     $(`#newslide${index}`).slick({

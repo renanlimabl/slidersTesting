@@ -5,9 +5,11 @@ $(function() {
             // console.log(index)
             const Allis = document.querySelectorAll('li.slick-slide')
             const onlyLi = document.querySelectorAll('li.slick-slide:not(.slick-cloned)')
-            const realLis = Math.floor((Allis.length - onlyLi.length ^ 2) / 3)
+
+            const findTheLi = Array.from(onlyLi).find(item => item.textContent === event.target.textContent)           
+            const getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 4)
             
-            const getOnlyIndexOfRealLis = (onlyLi.length - index - realLis)            
+
 
             // lis.forEach(li => li.classList.remove('active-custom-slider'))
 
@@ -15,11 +17,12 @@ $(function() {
             // console.log(actualLi)
             // actualLi.classList.add('active-custom-slider')
             // console.log(Math.abs(getOnlyIndexOfRealLis))
+            console.log(getOnlyIndexOfRealLis)
             apperFirstSlide(Math.abs(getOnlyIndexOfRealLis), event.currentTarget)
         })
     })
 
-    function apperFirstSlide(id, currentTarget) {
+    function apperFirstSlide(id, currentTarget) {        
         const getAllSliders = document.querySelectorAll('.container')
         getAllSliders.forEach((slide, index) => {
             slide.classList.remove('active')
