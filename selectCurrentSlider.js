@@ -6,8 +6,16 @@ $(function() {
             const Allis = document.querySelectorAll('li.slick-slide')
             const onlyLi = document.querySelectorAll('li.slick-slide:not(.slick-cloned)')
 
-            const findTheLi = Array.from(onlyLi).find(item => item.textContent === event.target.textContent)           
-            const getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 4)
+            const findTheLi = Array.from(onlyLi).find(item => item.textContent === event.target.textContent)
+            let getOnlyIndexOfRealLis;
+            if (window.matchMedia("(min-width: 400px)").matches) {
+                /* a viewport tem pelo menos 400 pixels de largura */
+                getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 4)
+            } else {
+                /* a viewport menos que 400 pixels de largura */
+                  getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 3)
+            }
+                    
             
 
 
