@@ -209,15 +209,14 @@ nav ul li + li {
     }
 
     nav ul li {
-        min-width: 94px !important;
+        min-width: 75px !important;
         height: 24.12px;
         font-size: 12px;
         width: 75px !important;
     }
 
     nav ul li + li {
-        margin-left: 10px;
-        
+        margin-left: 10px;        
     }
 
     nav.navigation {
