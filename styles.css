@@ -159,13 +159,13 @@ nav ul li + li {
         margin-bottom: 5px;
     }
 
-    .slick-slide {
-        margin: 0 5px;
+    .slick-list {
+       
+        margin-left: 2px;
     }
 
-    .slick-list {
-        margin: 0 25px;
-        margin-left: 2px;
+    .slick-slide {
+        margin: 0 5px
     }
 
     nav ul {
@@ -196,7 +196,7 @@ nav ul li + li {
     }
 
     .slick-slide {
-        margin: 0 5px;
+        margin: 0 5px
     }
 
     .slick-list {
