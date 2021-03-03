@@ -8,12 +8,12 @@ $(function() {
 
             const findTheLi = Array.from(onlyLi).find(item => item.textContent === event.target.textContent)
             let getOnlyIndexOfRealLis;
-            if (window.matchMedia("(min-width: 400px)").matches) {
+            if (window.matchMedia("(min-width: 768px)").matches) {
                 /* a viewport tem pelo menos 400 pixels de largura */
                 getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 4)
             } else {
                 /* a viewport menos que 400 pixels de largura */
-                  getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 3)
+                  getOnlyIndexOfRealLis = (Array.from(Allis).indexOf(findTheLi) - 4)
             }
                     
             
